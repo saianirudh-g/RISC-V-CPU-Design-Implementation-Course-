@@ -1,0 +1,99 @@
+32 MIPS Registers:
+| Register Number | Name      | Purpose             |
+| --------------- | --------- | ------------------- |
+| $0              | $zero     | Constant 0          |
+| $1              | $at       | Assembler temporary |
+| $2              | $v0       | Function result     |
+| $3              | $v1       | Function result     |
+| $4              | $a0       | Argument 1          |
+| $5              | $a1       | Argument 2          |
+| $6              | $a2       | Argument 3          |
+| $7              | $a3       | Argument 4          |
+| $8              | $t0       | Temporary           |
+| $9              | $t1       | Temporary           |
+| $10             | $t2       | Temporary           |
+| $11             | $t3       | Temporary           |
+| $12             | $t4       | Temporary           |
+| $13             | $t5       | Temporary           |
+| $14             | $t6       | Temporary           |
+| $15             | $t7       | Temporary           |
+| $16             | $s0       | Saved register      |
+| $17             | $s1       | Saved register      |
+| $18             | $s2       | Saved register      |
+| $19             | $s3       | Saved register      |
+| $20             | $s4       | Saved register      |
+| $21             | $s5       | Saved register      |
+| $22             | $s6       | Saved register      |
+| $23             | $s7       | Saved register      |
+| $24             | $t8       | Temporary           |
+| $25             | $t9       | Temporary           |
+| $26             | $k0       | Kernel register     |
+| $27             | $k1       | Kernel register     |
+| $28             | $gp       | Global pointer      |
+| $29             | $sp       | Stack pointer       |
+| $30             | $fp ($s8) | Frame pointer       |
+| $31             | $ra       | Return address      |
+
+R-Type Instructions:
+R-type instructions operate on registers only.
+
+add
+addu
+sub
+subu
+and
+or
+xor
+nor
+slt
+sltu
+sll
+srl
+sra
+sllv
+srlv
+srav
+jr
+jalr
+mult
+multu
+div
+divu
+mfhi
+mflo
+mthi
+mtlo
+R-Type Format:
+opcode (6) | rs (5) | rt (5) | rd (5) | shamt (5) | funct (6)
+
+I-Type Instructions:
+I-type instructions use an immediate value (constant) or memory offset.
+
+Arithmetic / Logical:
+addi
+addiu
+andi
+ori
+xori
+slti
+sltiu
+lui
+Load Instructions:
+lb
+lbu
+lh
+lhu
+lw
+Store Instructions:
+sb
+sh
+sw
+Branch Instructions:
+beq
+bne
+blez
+bgtz
+bltz
+bgez
+I-Type Format:
+opcode (6) | rs (5) | rt (5) | immediate (16)
