@@ -39,9 +39,9 @@ Each stage is separated by pipeline registers to maintain data flow and timing i
 
 ## 🧮 Microarchitectural Design
 
-### 1. **Pipeline Registers**
+### **Pipeline Registers**
 All inter‑stage data paths are latched using the generic `pipe_reg` module:
-```verilog
+
 pipe_reg #(WIDTH) REG(clk, reset, data_in, data_out);
 
 ---
