@@ -1,0 +1,361 @@
+$date
+	Sat Jun 20 15:52:35 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_week4 $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 # mem_read $end
+$var wire 1 $ mem_to_reg $end
+$var wire 1 % mem_write $end
+$var wire 1 " reset $end
+$var wire 32 & wb_data [31:0] $end
+$var wire 5 ' rs2 [4:0] $end
+$var wire 5 ( rs1 [4:0] $end
+$var wire 5 ) rd [4:0] $end
+$var wire 32 * pc_out [31:0] $end
+$var wire 32 + pc_next [31:0] $end
+$var wire 7 , opcode [6:0] $end
+$var wire 32 - mem_data [31:0] $end
+$var wire 32 . instr [31:0] $end
+$var wire 7 / funct7 [6:0] $end
+$var wire 3 0 funct3 [2:0] $end
+$var wire 32 1 alu_result [31:0] $end
+$var wire 4 2 alu_ctrl [3:0] $end
+$scope module AC $end
+$var wire 7 3 opcode [6:0] $end
+$var wire 7 4 funct7 [6:0] $end
+$var wire 3 5 funct3 [2:0] $end
+$var reg 4 6 alu_ctrl [3:0] $end
+$upscope $end
+$scope module ALU $end
+$var wire 32 7 a [31:0] $end
+$var wire 4 8 alu_ctrl [3:0] $end
+$var wire 32 9 b [31:0] $end
+$var wire 1 : zero $end
+$var reg 32 ; result [31:0] $end
+$upscope $end
+$scope module DEC $end
+$var wire 5 < rs2 [4:0] $end
+$var wire 5 = rs1 [4:0] $end
+$var wire 5 > rd [4:0] $end
+$var wire 7 ? opcode [6:0] $end
+$var wire 32 @ instr [31:0] $end
+$var wire 7 A funct7 [6:0] $end
+$var wire 3 B funct3 [2:0] $end
+$upscope $end
+$scope module DM $end
+$var wire 32 C addr [31:0] $end
+$var wire 1 ! clk $end
+$var wire 1 # mem_read $end
+$var wire 1 % mem_write $end
+$var wire 32 D write_data [31:0] $end
+$var reg 32 E read_data [31:0] $end
+$upscope $end
+$scope module IM $end
+$var wire 32 F instr [31:0] $end
+$var wire 32 G addr [31:0] $end
+$upscope $end
+$scope module PC $end
+$var wire 1 ! clk $end
+$var wire 32 H pc_next [31:0] $end
+$var wire 1 " reset $end
+$var reg 32 I pc_out [31:0] $end
+$upscope $end
+$scope module WB $end
+$var wire 32 J alu_result [31:0] $end
+$var wire 32 K mem_data [31:0] $end
+$var wire 1 $ mem_to_reg $end
+$var wire 32 L wb_data [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0xxxx L
+b0 K
+b1111 J
+b0 I
+b100 H
+b0 G
+b110011 F
+b0 E
+b10100101101001011010010110100101 D
+b1111 C
+b0 B
+b0 A
+b110011 @
+b110011 ?
+b0 >
+b0 =
+b0 <
+b1111 ;
+0:
+b101 9
+b0 8
+b1010 7
+b0 6
+b0 5
+b0 4
+b110011 3
+b0 2
+b1111 1
+b0 0
+b0 /
+b110011 .
+b0 -
+b110011 ,
+b100 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0xxxx &
+z%
+z$
+z#
+1"
+0!
+$end
+#5000
+1!
+#10000
+0!
+0"
+#15000
+b10 '
+b10 <
+b1 (
+b1 =
+b11 )
+b11 >
+b1000001000000110110011 .
+b1000001000000110110011 @
+b1000001000000110110011 F
+b1000 +
+b1000 H
+b100 *
+b100 G
+b100 I
+1!
+#20000
+0!
+#25000
+b11 '
+b11 <
+b10 (
+b10 =
+b100 )
+b100 >
+b1100010000001000110011 .
+b1100010000001000110011 @
+b1100010000001000110011 F
+b1100 +
+b1100 H
+b1000 *
+b1000 G
+b1000 I
+1!
+#30000
+0!
+#35000
+b0 &
+b0 L
+1:
+b0 1
+b0 ;
+b0 C
+b0 J
+b1111 2
+b1111 6
+b1111 8
+bx /
+bx 4
+bx A
+bx '
+bx <
+bx (
+bx =
+bx 0
+bx 5
+bx B
+bx )
+bx >
+bx ,
+bx 3
+bx ?
+bx .
+bx @
+bx F
+b10000 +
+b10000 H
+b1100 *
+b1100 G
+b1100 I
+1!
+#40000
+0!
+#45000
+b10100 +
+b10100 H
+b10000 *
+b10000 G
+b10000 I
+1!
+#50000
+0!
+#55000
+b11000 +
+b11000 H
+b10100 *
+b10100 G
+b10100 I
+1!
+#60000
+0!
+#65000
+b11100 +
+b11100 H
+b11000 *
+b11000 G
+b11000 I
+1!
+#70000
+0!
+#75000
+b100000 +
+b100000 H
+b11100 *
+b11100 G
+b11100 I
+1!
+#80000
+0!
+#85000
+b100100 +
+b100100 H
+b100000 *
+b100000 G
+b100000 I
+1!
+#90000
+0!
+#95000
+b101000 +
+b101000 H
+b100100 *
+b100100 G
+b100100 I
+1!
+#100000
+0!
+#105000
+b101100 +
+b101100 H
+b101000 *
+b101000 G
+b101000 I
+1!
+#110000
+0!
+#115000
+b110000 +
+b110000 H
+b101100 *
+b101100 G
+b101100 I
+1!
+#120000
+0!
+#125000
+b110100 +
+b110100 H
+b110000 *
+b110000 G
+b110000 I
+1!
+#130000
+0!
+#135000
+b111000 +
+b111000 H
+b110100 *
+b110100 G
+b110100 I
+1!
+#140000
+0!
+#145000
+b111100 +
+b111100 H
+b111000 *
+b111000 G
+b111000 I
+1!
+#150000
+0!
+#155000
+b1000000 +
+b1000000 H
+b111100 *
+b111100 G
+b111100 I
+1!
+#160000
+0!
+#165000
+b1000100 +
+b1000100 H
+b1000000 *
+b1000000 G
+b1000000 I
+1!
+#170000
+0!
+#175000
+b1001000 +
+b1001000 H
+b1000100 *
+b1000100 G
+b1000100 I
+1!
+#180000
+0!
+#185000
+b1001100 +
+b1001100 H
+b1001000 *
+b1001000 G
+b1001000 I
+1!
+#190000
+0!
+#195000
+b1010000 +
+b1010000 H
+b1001100 *
+b1001100 G
+b1001100 I
+1!
+#200000
+0!
+#205000
+b1010100 +
+b1010100 H
+b1010000 *
+b1010000 G
+b1010000 I
+1!
+#210000
+0!

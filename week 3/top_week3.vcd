@@ -1,0 +1,296 @@
+$date
+	Sat Jun 20 15:31:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_top_week3 $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module uut $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 5 # rs2 [4:0] $end
+$var wire 5 $ rs1 [4:0] $end
+$var wire 5 % rd [4:0] $end
+$var wire 32 & pc_out [31:0] $end
+$var wire 32 ' pc_next [31:0] $end
+$var wire 7 ( opcode [6:0] $end
+$var wire 32 ) instr [31:0] $end
+$var wire 7 * funct7 [6:0] $end
+$var wire 3 + funct3 [2:0] $end
+$var wire 1 , branch_taken $end
+$var wire 32 - alu_result [31:0] $end
+$var wire 4 . alu_ctrl [3:0] $end
+$scope module AC $end
+$var wire 7 / opcode [6:0] $end
+$var wire 7 0 funct7 [6:0] $end
+$var wire 3 1 funct3 [2:0] $end
+$var reg 4 2 alu_ctrl [3:0] $end
+$upscope $end
+$scope module ALU $end
+$var wire 32 3 a [31:0] $end
+$var wire 4 4 alu_ctrl [3:0] $end
+$var wire 32 5 b [31:0] $end
+$var wire 1 6 zero $end
+$var reg 32 7 result [31:0] $end
+$upscope $end
+$scope module BC $end
+$var wire 32 8 a [31:0] $end
+$var wire 32 9 b [31:0] $end
+$var wire 3 : funct3 [2:0] $end
+$var reg 1 , branch_taken $end
+$upscope $end
+$scope module DEC $end
+$var wire 5 ; rs2 [4:0] $end
+$var wire 5 < rs1 [4:0] $end
+$var wire 5 = rd [4:0] $end
+$var wire 7 > opcode [6:0] $end
+$var wire 32 ? instr [31:0] $end
+$var wire 7 @ funct7 [6:0] $end
+$var wire 3 A funct3 [2:0] $end
+$upscope $end
+$scope module IM $end
+$var wire 32 B instr [31:0] $end
+$var wire 32 C addr [31:0] $end
+$upscope $end
+$scope module PC $end
+$var wire 1 ! clk $end
+$var wire 32 D pc_next [31:0] $end
+$var wire 1 " reset $end
+$var reg 32 E pc_out [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 E
+b100 D
+b0 C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+b101 9
+b1010 8
+b0 7
+16
+b101 5
+bx 4
+b1010 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+b0 -
+0,
+bx +
+bx *
+bx )
+bx (
+b100 '
+b0 &
+bx %
+bx $
+bx #
+1"
+0!
+$end
+#5000
+1!
+#10000
+0!
+0"
+#15000
+b1000 '
+b1000 D
+b100 &
+b100 C
+b100 E
+1!
+#20000
+0!
+#25000
+b1100 '
+b1100 D
+b1000 &
+b1000 C
+b1000 E
+1!
+#30000
+0!
+#35000
+b10000 '
+b10000 D
+b1100 &
+b1100 C
+b1100 E
+1!
+#40000
+0!
+#45000
+b10100 '
+b10100 D
+b10000 &
+b10000 C
+b10000 E
+1!
+#50000
+0!
+#55000
+b11000 '
+b11000 D
+b10100 &
+b10100 C
+b10100 E
+1!
+#60000
+0!
+#65000
+b11100 '
+b11100 D
+b11000 &
+b11000 C
+b11000 E
+1!
+#70000
+0!
+#75000
+b100000 '
+b100000 D
+b11100 &
+b11100 C
+b11100 E
+1!
+#80000
+0!
+#85000
+b100100 '
+b100100 D
+b100000 &
+b100000 C
+b100000 E
+1!
+#90000
+0!
+#95000
+b101000 '
+b101000 D
+b100100 &
+b100100 C
+b100100 E
+1!
+#100000
+0!
+#105000
+b101100 '
+b101100 D
+b101000 &
+b101000 C
+b101000 E
+1!
+#110000
+0!
+#115000
+b110000 '
+b110000 D
+b101100 &
+b101100 C
+b101100 E
+1!
+#120000
+0!
+#125000
+b110100 '
+b110100 D
+b110000 &
+b110000 C
+b110000 E
+1!
+#130000
+0!
+#135000
+b111000 '
+b111000 D
+b110100 &
+b110100 C
+b110100 E
+1!
+#140000
+0!
+#145000
+b111100 '
+b111100 D
+b111000 &
+b111000 C
+b111000 E
+1!
+#150000
+0!
+#155000
+b1000000 '
+b1000000 D
+b111100 &
+b111100 C
+b111100 E
+1!
+#160000
+0!
+#165000
+b1000100 '
+b1000100 D
+b1000000 &
+b1000000 C
+b1000000 E
+1!
+#170000
+0!
+#175000
+b1001000 '
+b1001000 D
+b1000100 &
+b1000100 C
+b1000100 E
+1!
+#180000
+0!
+#185000
+b1001100 '
+b1001100 D
+b1001000 &
+b1001000 C
+b1001000 E
+1!
+#190000
+0!
+#195000
+b1010000 '
+b1010000 D
+b1001100 &
+b1001100 C
+b1001100 E
+1!
+#200000
+0!
+#205000
+b1010100 '
+b1010100 D
+b1010000 &
+b1010000 C
+b1010000 E
+1!
+#210000
+0!
