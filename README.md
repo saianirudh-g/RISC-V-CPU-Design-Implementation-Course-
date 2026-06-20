@@ -83,9 +83,6 @@ riscv_cpu_sai/
 ├── week7/          # Performance counters, CPI measurement
 ├── week8/          # Full program execution, integration testbench
 │
-├── top_week7.v     # Week 7 top-level (performance-focused)
-├── top_week8.v     # Week 8 top-level (full program integration)
-├── tb_top_week7.v  # Week 7 testbench
-├── tb_top_week8.v  # Week 8 testbench
+├── Screenshots
 │
 └── README.md       # Project documentation
